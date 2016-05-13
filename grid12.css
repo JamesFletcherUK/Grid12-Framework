@@ -1,7 +1,10 @@
-/*Grid12 CSS FRamework version 1.1*/
+/*Grid12 CSS FRamework version 2.0*/
     /*Copywrite ®JamesFletcher/www.grid12CSS.com*/
      /*Info completed for university dissertation project. Link to full disertation at top of page.*/
- /*www.grid12framework.com*/
+ /*www.grid12framework.com
+ Copyright 2016
+*/
+ 
  
 /* Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
@@ -27,7 +30,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   font-family: "lato", "Helvetica", Arial, sans-serif;
-  background-color:#f6f6f6; }
+  background-color:#f8f8f8; }
 @font-face {
     src: urlhttp://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext) format("truetype");}
 /*
@@ -47,7 +50,6 @@ body {
   .col- { margin-left: 4%; }
   .col-:first-child {margin-left: 0; }
 @media (min-width: 400px) {  .container { width: 85%; padding: 0; }}
-
 /*Grid System
 -----------------------------------------------------------------------------------*/
     [class*='col-'] {
@@ -66,7 +68,7 @@ body {
     .col-10{ width: 83.3333333333333%;   }
     .col-11{ width: 91.66666666666663%; }
     .col-12{ width: 100%; margin-left: 0; }
-        
+
   .push-col-1{ margin-left: 8.66666666667%; }
   .push-col-2{ margin-left: 17.3333333333%; }
   .push-col-3{ margin-left: 26%;            }
@@ -83,7 +85,7 @@ push
       .half-col{ width: 50%;    }
       .full-col{ width: 100%;   }
         .col-1-3               { width: 33.33333333333333%; }
-        
+}
         /*-- Container settings and misc  --*/
         .container {
   position: relative;
@@ -92,7 +94,6 @@ push
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
-  }
   .hr {
   margin-top: 3rem;
   margin-bottom: 3.5rem;
@@ -143,7 +144,6 @@ h5 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
  }
 .p {
   margin-top: 0; }
-  
     /*Images*/
     /*-------------------------------------------------------------------------------*/
     img {
@@ -161,23 +161,6 @@ img .max{
 }
 /*;Layout*/
 /*-------------------------------------------------------------------------------*/
- .full-width {
-  width: 100%;
-  box-sizing: border-box;
-  align:center;}
-.text-center-screen{
-      position: absolute;
-    width: 100px;
-    height: 50px;
-    top: 50%;
-    left: 50%;
-    margin-left: -50px; 
-    margin-top: -25px;
-}
-.text-vertical-center {
-    text-align: center;
-    vertical-align: text-middle;
-}
 .text-center{
   text-align: center;
 }
@@ -243,7 +226,7 @@ input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #333;
   border-color: #888;
-  outline: 0; }
+  outline: 0; }}
   /*-------------------------------------------------------------------------------*/
     /*Smaller Button Structure Class*/
       .s-button,
@@ -379,8 +362,8 @@ input[type="submit"].button-stylish,
 input[type="reset"].button-stylish,
 input[type="button"].button-stylish {
   color: #FFF;
-  background-color: #ff9dab;
-  border-color: #ff9dab; }
+  background-color: #FFD1DC;
+  border-color: #FFD1DC; }
 .button.button-stylish:hover,
 button.button-stylish:hover,
 input[type="submit"].button-stylish:hover,
@@ -392,8 +375,8 @@ input[type="submit"].button-stylish:focus,
 input[type="reset"].button-stylish:focus,
 input[type="button"].button-stylish:focus {
   color: #FFF;
-  background-color: #ff8396;
-  border-color: #ff8396;
+  background-color: #ff9dab;
+  border-color: #ff9dab;
  }
  
  /*-------------------------------------------------------------------------------*/
@@ -420,7 +403,7 @@ th,
 td {
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 3px  dotted #363636; }
+  border-bottom: 3px dotted #363636; }
 th:first-child,
 td:first-child {
   padding-left: 0; }
@@ -440,7 +423,7 @@ td:last-child {
   height:100%;
 }
 .feature_bg { 
-  background:radial-gradient(#898989,#b19cd9);
+  background:linear-gradient(#6CAFE5,#DEDEDE);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -465,7 +448,7 @@ td:last-child {
   height:100%;
     left:0;
     right:0;
-   background:radial-gradient(#898989,#b19cd9);
+   background:linear-gradient(#6CAFE5,#DEDEDE);
     z-index:1;
 }
    /*---------------------------Hero Unit----------------------------------*/
@@ -530,6 +513,9 @@ td:last-child {
   top: -100px;
   padding-bottom: 6px;
   font-family:"Lato", sans-serif;
+  	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 @media only screen and (max-width: 766px) {
   .navbar {
@@ -556,7 +542,7 @@ td:last-child {
   border-bottom: 2px solid gainsboro;
 }
 .sticky-stylish {
-  background-color:#ff9dab;
+  background-color:#FFD1DC;
   opacity: 1;
   top: 0px;
   border-bottom: 2px solid gainsboro;
@@ -632,6 +618,9 @@ nav ul a {
   color: #272727;
   text-transform: uppercase;
   font-size: 13px;
+}
+nav ul a:hover { 
+    opacity: 0.7;
 }
 .sticky-inverse nav ul a{
   color: #F1F1F1;
